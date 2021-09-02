@@ -40,19 +40,21 @@
   justify-content: space-around;
   display: flex;
   align-items: baseline;
+
 }
 
 .navegador li {
   border-radius: 70px;
-  padding: 11px;
+  padding: 10px;
   color: blanchedalmond;
-  background-color: #1d759e;
+  background-color: #a611c0;
   width: 95%;
   margin: 0%;
   display: inline;
   height: 60px;
   border-radius: 50px;
   vertical-align: middle;
+
 }
 
 .columna1 {
@@ -139,9 +141,15 @@ button {
 }
 
 .navegador:nth-of-type(1) .btn-success:hover,
-.navegador:nth-of-type(2) .btn-success:hover {
+.navegador:nth-of-type(2) .btn-success:hover{
   background: #e60303;
   border-radius: 10px;
   cursor: pointer;
   color:yellow;
+}
+
+@media (min-width: 768px){
+  .navegador, .navegador li{
+    flex-direction: row;
+  }
 }
